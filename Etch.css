@@ -1,5 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+h1 {
+   text-align: center;
+}
+
 #grid {
     display:flex;
     flex:1;
+
     
+}
+
+.gridBox {
+    background-color: black;
+    color:white;
+    border-style:solid;
+    border-width:4px;
+    padding:4px;
 }
