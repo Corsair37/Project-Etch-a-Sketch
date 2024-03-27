@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         let numBoxes = prompt("How many boxes would you like?");
-        if (numBoxes) {
+        if (numBoxes > 0) {
             for (let i = 0; i < numBoxes; i++) {
                 let newDiv = document.createElement("div");
                 newDiv.className = "gridBox";
