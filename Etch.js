@@ -41,20 +41,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+function replaceGrid () {
+    let replaceGrid = document.getElementById ("grid");
 
-    let oldGrid = document.querySelectorAll(".gridBox");
-    let replaceGrid = document.getElementById("newGrid");
-    replaceGrid.addEventListener("click", () => {
-        oldGrid.length.remove();
-        
-        let numBoxes = prompt("How many boxes would you like?");
-        if (numBoxes > 0) {
-            for (let i = 0; i < numBoxes; i++) {
-                let newDiv = document.createElement("div");
-                newDiv.className = "gridBox";
-                newDiv.textContent = "";
-                grid.appendChild(newDiv);
-            } return grid
-        } 
-    });
+    while (replaceGrid.firstChild) {
+        replaceGrid.removeChild(replaceGrid.firstChild)
+    } 
 
+    let numBoxes = prompt("How many boxes would you like?");
+    if (numBoxes) {
+        for (let i = 0; i < numBoxes; i++) {
+            let newDiv = document.createElement("div");
+            newDiv.className = "gridBox";
+            newDiv.textContent = "  ";
+            replaceGrid.appendChild(newDiv);
+        }
+    }
+}
