@@ -3,10 +3,28 @@ body {
     flex-direction: column;
     flex:1;
     background-color: gray;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
 }
 
 h1 {
    text-align: center;
+}
+
+button {
+    text-align:center;
+    color:white;
+    background-color:black;
+    width:fit-content;
+    
+}
+
+button:hover{
+    animation-name: colorChange;
+    animation-duration:5s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
 }
 
 #grid {

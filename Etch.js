@@ -40,3 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1000);
     }
 });
+
+function replaceGrid () {
+    let oldGrid = document.getElementbyClassName ("gridBox")
+    let replaceGrid = document.getElementById ("newGrid");
+    replaceGrid.addEventListener("click", () => {
+    oldGrid. remove();
+    for (i = 0 ; i < prompt("How many boxes would you like?") ; i++) {
+        let newDiv = document.createElement ("div");
+        newDiv.className = "gridBox";
+        newDiv.textContent= "  "
+        grid.appendChild (newDiv)
+    }
+
+ })
+}
