@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     flex:1;
+    background-color: gray;
 }
 
 h1 {
@@ -16,8 +17,8 @@ h1 {
 }
 
 .gridBox {
-     background-color:black;
-     color:white;
+     background-color:white;
+     color:black;
     border-style:solid;
     width: calc(100%/16);
     height:auto;
