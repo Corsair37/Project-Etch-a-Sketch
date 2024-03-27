@@ -22,10 +22,10 @@ h1 {
     width: calc(100%/16);
     height:auto;
     box-sizing:border-box;
-    
+    transition: background-color 0.5s, color 0.5s;
 }
 
-@keyframes bgcolorChange {
+@keyframes colorChange {
     0% {
         background-color: red;
         color:violet;
@@ -74,6 +74,9 @@ h1 {
 
 
 .gridBox:hover{
-    animation-name: bgcolorChange;
+    animation-name: colorChange;
+    animation-duration:5s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
 }
 
