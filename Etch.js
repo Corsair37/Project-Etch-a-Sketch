@@ -4,7 +4,7 @@ function fillGrid () {
     for (let i = 0; i < 256 ; i++) {
         let newDiv = document.createElement ("div");
         newDiv.className = "gridBox";
-        newDiv.textContent= "  "
+        newDiv.textContent= ""
         grid.appendChild (newDiv)
     } return grid
 
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
             for (let i = 0; i < numBoxes; i++) {
                 let newDiv = document.createElement("div");
                 newDiv.className = "gridBox";
-                newDiv.textContent = "  ";
+                newDiv.textContent = "";
                 grid.appendChild(newDiv);
             } return grid
         }
