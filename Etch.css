@@ -16,11 +16,64 @@ h1 {
 }
 
 .gridBox {
-    background-color: black;
-    color:white;
+     background-color:black;
+     color:white
     border-style:solid;
     width: calc(100%/16);
     height:auto;
     box-sizing:border-box;
     
 }
+
+@keyframes bgcolorChange {
+    0% {
+        background-color: red;
+        color:violet;
+    }
+    10% {
+        background-color: orange;
+        color:indigo;
+    }
+    20% {
+        background-color: yellow;
+        color:blue;
+    }
+    30% {
+        background-color:green;
+        color:green;
+    }
+    40% {
+        background-color:blue;
+        color:yellow;
+    }
+    50% {
+        background-color:indigo;
+        color:orange;
+    }
+    60% {
+        background-color:violet;
+        color:red;
+    }
+    70% {
+        background-color:indigo;
+        color:red;
+    }
+    80% {
+        background-color: blue;
+        color:orange;
+    }
+    90% {
+        background-color:green;
+        color:yellow;
+    }
+    100% {
+        background-color:yellow;
+        color:black;
+    }
+}
+
+
+.gridBox:hover{
+    animation-name: bgcolorChange;
+}
+
