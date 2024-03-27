@@ -58,3 +58,6 @@ function replaceGrid () {
         }
     }
 }
+
+let newGrid = document.getElementById (newGrid);
+newGrid.addEventListener ("click", replaceGrid ())
