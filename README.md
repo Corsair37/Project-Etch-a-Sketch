@@ -1,0 +1,1 @@
+This is one of the two final projects in the FOundations course in The Odin Project. It is extensive, and aims to create a browser version of the popular "Etch-a-Sketch" game. The previous project, Rock-Paper-Scissors, was done using mainly AI (ChatGPT) in order to optimize my code. This time, however, I am going to do this without the assistance of ChatGPT. This one is all me.
