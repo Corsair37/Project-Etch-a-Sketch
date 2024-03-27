@@ -19,7 +19,8 @@ h1 {
     background-color: black;
     color:white;
     border-style:solid;
-    border-width:4px;
-    padding:4px;
-    width: 6.25%;
+    width: calc(100%/16);
+    height:auto;
+    box-sizing:border-box;
+    
 }
