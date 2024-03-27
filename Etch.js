@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function replaceGrid() {
+
     let oldGrid = document.getElementsByClassName("gridBox");
     let replaceGrid = document.getElementById("newGrid");
     replaceGrid.addEventListener("click", () => {
@@ -57,7 +57,7 @@ function replaceGrid() {
                 newDiv.className = "gridBox";
                 newDiv.textContent = "  ";
                 replaceGrid.appendChild(newDiv);
-            }
+            } return replaceGrid
         }
     });
-}
+
