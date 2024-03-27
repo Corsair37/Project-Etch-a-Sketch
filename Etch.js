@@ -45,10 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let oldGrid = document.querySelectorAll(".gridBox");
     let replaceGrid = document.getElementById("newGrid");
     replaceGrid.addEventListener("click", () => {
-
-        for (let i = 0; i < oldGrid.length; i++) {
-            oldGrid[i].remove();
-        }
+        oldGrid.length.remove();
         
         let numBoxes = prompt("How many boxes would you like?");
         if (numBoxes > 0) {
@@ -58,6 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 newDiv.textContent = "";
                 grid.appendChild(newDiv);
             } return grid
-        }
+        } 
     });
 
