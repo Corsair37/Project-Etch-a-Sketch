@@ -41,17 +41,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function replaceGrid () {
-    let oldGrid = document.getElementbyClassName ("gridBox")
-    let replaceGrid = document.getElementById ("newGrid");
+function replaceGrid() {
+    let oldGrid = document.getElementsByClassName("gridBox");
+    let replaceGrid = document.getElementById("newGrid");
     replaceGrid.addEventListener("click", () => {
-    oldGrid. remove();
-    for (i = 0 ; i < prompt("How many boxes would you like?") ; i++) {
-        let newDiv = document.createElement ("div");
-        newDiv.className = "gridBox";
-        newDiv.textContent= "  "
-        grid.appendChild (newDiv)
-    }
 
- })
+        for (let i = 0; i < oldGrid.length; i++) {
+            oldGrid[i].remove();
+        }
+        
+        let numBoxes = prompt("How many boxes would you like?");
+        if (numBoxes) {
+            for (let i = 0; i < numBoxes; i++) {
+                let newDiv = document.createElement("div");
+                newDiv.className = "gridBox";
+                newDiv.textContent = "  ";
+                replaceGrid.appendChild(newDiv);
+            }
+        }
+    });
 }
