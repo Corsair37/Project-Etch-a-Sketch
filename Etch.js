@@ -21,10 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function createPixel(x, y) {
+
+        let rect = container.getBoundingClientRect ();
+        let pixelX = x - rect.left;
+        let pixelY = y - rect.top;
+
         let pixel = document.createElement("div");
         pixel.className = "pixel";
-        pixel.style.left = x + "px";
-        pixel.style.top = y + "px";
+        pixel.style.left = pixelX + "px";
+        pixel.style.top = pixelY + "px";
         container.appendChild(pixel);
 
         setTimeout(function() {
