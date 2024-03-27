@@ -51,7 +51,7 @@ function replaceGrid() {
         gridBoxes.forEach(function(box) {
             box.remove();
         })
-        
+
         for (let i = 0; i < parseInt(numBoxes); i++) {
             let newDiv = document.createElement("div");
             newDiv.className = "gridBox";
@@ -62,3 +62,6 @@ function replaceGrid() {
         alert("Please enter a valid number of boxes.");
     }
 }
+
+let newGrid = document.getElementById("newGrid");
+newGrid.addEventListener("click", replaceGrid);
