@@ -25,6 +25,7 @@ h1 {
     height:auto;
     box-sizing:border-box;
     transition: background-color 0.5s, color 0.5s;
+    z-index:1;
 }
 
 @keyframes colorChange {
@@ -91,4 +92,5 @@ h1 {
     pointer-events:none;
     opacity:0;
     transition:opacity 0.3s ease;
+    z-index:2;
 }
