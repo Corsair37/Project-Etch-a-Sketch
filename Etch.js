@@ -6,8 +6,7 @@ function fillGrid () {
         newDiv.className = "gridBox";
         newDiv.textContent= "16"
         grid.appendChild (newDiv)
-        return grid
-    }
+    } return grid
 
 }
 
