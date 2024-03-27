@@ -55,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function() {
             for (let i = 0; i < numBoxes; i++) {
                 let newDiv = document.createElement("div");
                 newDiv.className = "gridBox";
-                newDiv.textContent = "  ";
-                replaceGrid.appendChild(newDiv);
-            } return replaceGrid
+                newDiv.textContent = "16";
+                grid.appendChild(newDiv);
+            } return grid
         }
     });
 
